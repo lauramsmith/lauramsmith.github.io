@@ -10,15 +10,23 @@ body {
     src: url(akrobat/Akrobat-SemiBold.otf);
 }
 
+
 #menu {
-	margin:=5em;
+	padding:0;
+	text-align: center;
+	margin-top: 5em;
 	white-space:nowrap;
 	list-style-type: none;
 }
+#menu li {
+	width: 100%;
+	margin:0;
+}
 
 #menu li a {
+	width:100%;
 	text-align: center;
-	margin: 5em;
+	margin-top: 5em;
 	text-decoration: none;
 	background: #F4C2C2;
 	color: white;

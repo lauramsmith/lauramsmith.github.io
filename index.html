@@ -47,95 +47,46 @@
         </p>
       </div>
       <div id="intro-image">
-        <img src="images/selfie.jpg">
+        <img src="media/selfie.jpg">
       </div>
     </div>
 
     <div id="filters" class="button-group">
-      <button class="button is-checked" data-filter=".highlight">Highlights</button>
-      <button class="button" data-filter=".publication">Research</button>
+      <button class="button=" data-filter=".highlight">Highlights</button>
+      <button class="button is-checked" data-filter=".publication">Research</button>
       <button class="button" data-filter=".misc">Misc</button>
     </div>
 
     <div class="grid">
 
       <!-- Highlights -->
-      <div class="list-item highlight description" data-category="highlight">
-        Some recent highlights from my research:
-      </div>
 
       <!-- Preview Videos -->
-      <div class="list-item highlight previews" data-category="highlight">
-
-        <a href="https://kzakka.com/robopianist/"><video class="preview1" playsinline="" muted="" autoplay="" loop="">
-            <source src="images/robopianist-teaser.mp4" type="video/mp4">
-          </video></a>
-
-        <a href="https://github.com/deepmind/mujoco_menagerie"><video class="preview2" playsinline="" muted=""
-            autoplay="" loop="">
-            <source src="images/menagerie.mp4" type="video/mp4">
-          </video></a>
-
-      </div>
+	  <div class="list-item highlight previews" data-category="highlight">
+		<a href="https://sites.google.com/berkeley.edu/walk-in-the-park"><img src="media/wip.gif" alt="" width="300px" /></a>
+		<a href="https://sites.google.com/berkeley.edu/twirl"><img src="media/twirl.gif" alt="" width="300px" /></a>
+	  </div>
 
       <!-- Truncated Set of Highlights (Shown by Default) -->
-      <div id="main-highlights">
-        <div class="list-item highlight" data-category="highlight">
-          <b>RoboPianist</b> makes the <a href="https://news.ycombinator.com/item?id=35376138">front page of Hacker
-            News</a>
-        </div>
-        <div class="list-item highlight" data-category="highlight">
-          <b>Google AI</b> blog post <a href="https://ai.googleblog.com/2022/02/robot-see-robot-do.html">"Robot See,
-            Robot Do"</a>
-        </div>
-        <div class="list-item highlight" data-category="highlight">
-          <b>Google AI</b> blog post <a
-            href="https://ai.googleblog.com/2019/10/learning-to-assemble-and-to-generalize.html">"Learning to Assemble
-            and to Generalize from Disassembly"</a>
-        </div>
-      </div>
+	  <div id="main-highlights">
 
-      <!-- All Archived Highlights (Click to Show) -->
-      <div id="more-highlights" style="display: None">
+		<div class="list-item highlight" data-category="highlight">
+		  <b>NewScientist</b> article <a href="https://www.newscientist.com/article/2335390-robot-dog-learns-to-walk-on-tough-terrain-in-just-20-minutes/">"Robot dog learns to walk on tough terrain in just 20 minutes"</a>
+		</div>
 
-        <div class="list-item highlight" data-category="highlight">
-          <p class="date">2023</p><a href="https://github.com/google-research/robopianist">RoboPianist</a> is released
-        </div>
+		<div class="list-item highlight" data-category="highlight">
+		  <b>Berkeley Engineering</b> article <a href="https://engineering.berkeley.edu/news/2022/10/step-by-step/">"Step by Step"</a>
+		</div>
 
-        <div class="list-item highlight" data-category="highlight">
-          <p class="date">2022</p><a href="https://github.com/deepmind/mujoco_menagerie">MuJoCo Menagerie</a> is
-          open-sourced
-        </div>
+		<div class="list-item highlight" data-category="highlight">
+		  <b>TechXplore</b> article <a href="https://techxplore.com/news/2021-11-technique-legged-robots-environment.html">"A technique that allows legged robots to continuously learn from their environment"</a>
+		</div>
 
-        <div class="list-item highlight" data-category="highlight">
-          <p class="date"></p>Google AI blog post <a
-            href="https://ai.googleblog.com/2022/02/robot-see-robot-do.html">"Robot See, Robot Do"</a>
-        </div>
+		<div class="list-item highlight" data-category="highlight">
+		  <b>TechXplore</b> article <a href="https://techxplore.com/news/2020-01-avid-framework-imitation-robots.html">"AVID: a framework to enhance imitation learning in robots"</a>
+		</div>
 
-        <div class="list-item highlight" data-category="highlight">
-          <p class="date">2021</p>Conference on Robot Learning (CoRL) <a href="https://x-irl.github.io/">Best Paper
-            Award Finalist</a> award
-        </div>
-        <div class="list-item highlight" data-category="highlight">
-          <p class="date"></p>Honored to be a recipient of the <a
-            href="https://ctl.stanford.edu/centennial-teaching-assistant-awards">Centennial Teaching Assistant</a> award
-        </div>
-
-        <div class="list-item highlight" data-category="highlight">
-          <p class="date">2020</p>IEEE International Conference on Robotics and Automation (ICRA) <a
-            href="https://form2fit.github.io/">Best Paper in Automation Award Finalist</a>
-        </div>
-        <div class="list-item highlight" data-category="highlight">
-          <p class="date"></p>Google AI blog post <a
-            href="https://ai.googleblog.com/2019/10/learning-to-assemble-and-to-generalize.html">"Learning to Assemble
-            and to Generalize from Disassembly"</a>
-        </div>
-      </div>
-
-      <!-- Toggle highlights button. -->
-      <div class="list-item highlight toggle-button" data-category="highlight">
-        <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
-      </div>
+	  </div>
 
       <!-- Publications -->
       <div class="list-item publication" data-category="publication">

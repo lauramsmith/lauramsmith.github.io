@@ -295,6 +295,19 @@ h3 a:hover {
   float: left;
 }
 
+
+@media (max-width: 767px) {
+  /* Increase the width from 1000 to 100% for smaller screens */
+  html {
+    font-size: 12pt;
+    width: 100%;
+  }
+
+  #main {
+    width: 100%;;
+  }
+}
+
 /**************************************************/
 /* Subtle footer at the bottom of the page. */
 

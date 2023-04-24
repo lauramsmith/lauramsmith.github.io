@@ -1,520 +1,318 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<!DOCTYPE HTML>
 <html>
+
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154930236-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <!-- Title -->
+  <title>Kevin Zakka - UC Berkeley</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1000">
 
-		gtag('config', 'UA-154930236-1');
-	</script>
+  <!-- Isotope JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-    <!-- Title -->
-    <title>Laura Smith</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1000">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Isotope JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
+  </style>
+</head>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-    </style>
-  </head>
+<body id="body">
 
-  <body id="body">
-
-    <div id="main">
-      <div id="intro">
-        <div id="intro-text">
-          <h1>Laura Smith</h1>
-          <p>
-            Hello! I'm a PhD student in CS at UC Berkeley advised by <a href="http://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>. I work on enabling robots to interact with and learn in the real world, so as to acquire human-like abilities. My research is generously supported in part by the NSF Graduate Research Fellowship.
-            <br><br>
-			<a href="Updated_Fellowship_CV.pdf">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/lauramsmith">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://scholar.google.com/citations?hl=en&authuser=2&user=BOAOkNQAAAAJ">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com/smithlaura1028">Twitter</a>
-            <br><br>
-            smithlaura at berkeley dot edu
-            <br><br>
+  <div id="main">
+    <div id="intro">
+      <div id="intro-text">
+        <h1>Kevin Zakka</h1>
+        <p>Hey there! I'm a CS PhD student at UC Berkeley, where I am advised by <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>.
+          My research lies at the intersection of robotics and machine learning.
+        <div id="more-bio" style="display: None">
+          <br>
+          <p>Kevin Zakka is a second year PhD student in Computer Science at UC Berkeley, where he is advised by Pieter Abbeel. He received
+            his MS in Computer Science with a distinction in research from Stanford University in 2021 and his BEng in
+            Electrical Engineering from the American University of Beirut in 2018. His research lies at the intersection
+            of robotics and
+            machine learning. Kevin has been finalist for best paper awards
+            at CoRL 2021 and ICRA 2020. He is also the recipient of the Stanford Centennial Teaching Assistant Award.
           </p>
         </div>
-        <div id="intro-image">
-          <img src="media/selfie.jpg">
-        </div>
+        <br>
+        <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/kevinzakka">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://scholar.google.com/citations?user=8qHnRnsAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/kevin-zakka-aab309195/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/kevin_zakka">Twitter</a>
+        <br><br>
+        zakka at berkeley dot edu
+        <br><br>
+        </p>
       </div>
-
-      <div id="filters" class="button-group">
-        <!-- <button class="button" data-filter="*">Show All</button> -->
-        <button class="button" data-filter=".highlight">Highlights</button>
-        <button class="button is-checked" data-filter=".publication">Research</button>
-        <!-- <button class="button" data-filter=".talk">Talks</button> -->
-        <button class="button" data-filter=".misc">Misc</button>
+      <div id="intro-image">
+        <img src="images/profile.jpg">
       </div>
-
-      <div class="grid">
-
-        <!-- Highlights -->
-        <div class="list-item highlight description" data-category="highlight">
-        </div>
-
-        <!-- Preview Videos -->
-        <div class="list-item highlight previews" data-category="highlight">
-          <a href="https://sites.google.com/berkeley.edu/walk-in-the-park"><img src="media/wip.gif" alt="" width="300px" /></a>
-		  <a href="https://sites.google.com/berkeley.edu/twirl"><img src="media/twirl.gif" alt="" width="300px" /></a>
-        </div>
-
-        <!-- Truncated Set of Highlights (Shown by Default) -->
-        <div id="main-highlights">
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>NewScientist</b> article <a href="https://www.newscientist.com/article/2335390-robot-dog-learns-to-walk-on-tough-terrain-in-just-20-minutes/">"Robot dog learns to walk on tough terrain in just 20 minutes"</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>Berkeley Engineering</b> article <a href="https://engineering.berkeley.edu/news/2022/10/step-by-step/">"Step by Step"</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>TechXplore</b> article <a href="https://techxplore.com/news/2021-11-technique-legged-robots-environment.html">"A technique that allows legged robots to continuously learn from their environment"</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>TechXplore</b> article <a href="https://techxplore.com/news/2020-01-avid-framework-imitation-robots.html">"AVID: a framework to enhance imitation learning in robots"</a>
-          </div>
-
-
-        </div>
-
-
-
-
-        <!-- Publications -->
-
-        <div class="list-item publication" data-category="publication">
-			<a href="https://sites.google.com/berkeley.edu/twirl" class="thumbnail">
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-					<source src="media/robopianist.mp4" type="video/mp4">
-				  </video>
-				<!-- <img src="media/twirl.gif" alt="" width="180px" class="responsive-image"/> -->
-			</a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://sites.google.com/berkeley.edu/twirl">Learning and Adapting Agile Locomotion Skills by Transferring Experience</a>
-			  </h3>
-			  <p>
-			  <font color="BE3455"><b>Laura Smith</b></font>,
-				<!-- J. Chase Kew,
-				<a href="https://easypapersniper.github.io/">Tianyu Li</a>,
-				Linda Luu,
-				<a href="https://xbpeng.github.io/">Xue Bin Peng</a>,
-				<a href="https://www.cc.gatech.edu/~sha9/">Sehoon Ha</a>,
-				<a href="https://www.jie-tan.net/">Jie Tan</a>,
-				<a href="http://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> -->
-				<br>
-				<i>RSS 2023.</i>
-				<br>
-				  <a href="https://sites.google.com/berkeley.edu/twirl">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-				  <a href="https://arxiv.org/abs/2304.09834">PDF</a>
-			  </p>
-			</div>
-		  </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="https://kzakka.com/robopianist/" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
-              <source src="media/robopianist.mp4" type="video/mp4">
-            </video>
-          </a>
-          <div class="project-description">
-            <h3>
-				<a href="https://kzakka.com/robopianist/">RoboPianist: A Benchmark for High-Dimensional Robot Control</a>
-			</h3>
-			<p>
-				<!-- <a href="https://kzakka.com">Kevin Zakka</a>, -->
-				<font color="BE3455"><b>Laura Smith</b></font>,
-				<!-- Nimrod Gileadi, 
-				Taylor Howell, 
-				<a href="https://xbpeng.github.io/">Xue Bin Peng</a>, 
-				Sumeet Singh, 
-				Yuval Tassa, 
-				<a href="https://www.peteflorence.com/">Pete Florence</a>, 
-				<a href="https://andyzeng.github.io">Andy Zeng</a>, 
-				<a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> -->
-			  <br>
-			  <i>Preprint.</i>
-			  <br>
-			  We introduce a new benchmarking suite for high-dimensional control, targeted at testing high spatial and temporal precision, coordination, and planning, all with an underactuated system frequently making-and-breaking contacts. The proposed challenge is mastering the piano through bi-manual dexterity, using a pair of simulated anthropomorphic robot hands.
-			  <br>
-                <a href="https://kzakka.com/robopianist/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://kzakka.com/robopianist/robopianist.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://github.com/google-research/robopianist">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://colab.research.google.com/github/google-research/robopianist/blob/main/tutorial.ipynb">Colab</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://kevinzakka.github.io/robopianist-demo/">Demo</a>
-			</p>
-          </div>
-        </div>
-
-		<div class="list-item publication" data-category="publication">
-			<a href="https://arxiv.org/abs/2302.02948" class="thumbnail">
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-				  <source src="media/RLPD_Tweet.mp4" type="video/mp4">
-				</video>
-			  </a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://arxiv.org/abs/2302.02948">Efficient Online Reinforcement Learning with Offline Data</a>
-			  </h3>
-			  <p>
-			  <!-- <a href="https://philipjball.github.io/">Philip J. Ball*</a>,  -->
-			  <font color="BE3455"><b>Laura Smith*</b></font>,
-			  <!-- <a href="https://www.kostrikov.xyz">Ilya Kostrikov*</a>,
-			  <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> -->
-			  <br>
-			  <i>Preprint.</i>
-			  <br> 
-			  How well can existing off-policy methods leverage offline data when learning online? In this work, we demonstrate that a set of minimal but important changes to existing off-policy RL algorithms can provide a 2.5× improvement over existing approaches across a diverse set of competitive benchmarks, with no additional computational overhead.
-			  <br>               
-			  <a href="https://arxiv.org/abs/2302.02948">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://github.com/ikostrikov/rlpd">Code</a>
-			  </p>
-			</div>
-		  </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="https://sites.google.com/berkeley.edu/walk-in-the-park" class="thumbnail">
-			<!-- <img src="media/wip.gif" alt="" width="180px"/> -->
-			<video playsinline="" muted="" autoplay="" loop="" width="180px">
-				<source src="media/robopianist.mp4" type="video/mp4">
-			</video>
-		  </a>
-          <div class="project-description">
-            <h3>
-				<a href="https://sites.google.com/berkeley.edu/walk-in-the-park">A Walk in the Park: Learning to Walk in 20 Minutes With Model-Free Reinforcement Learning</a>
-			</h3>
-			<p>
-            <font color="BE3455"><b>Laura Smith*</b></font>,
-			<!-- <a href="https://www.kostrikov.xyz">Ilya Kostrikov*</a>,
-			<a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> -->
-			<br>
-			<i>RSS Demo Track, 2023.</i>
-			<br>
-			Can a robot learn locomotion in the wild? We found that with the right implementation, it can be a walk in the park! Recent advancements in ML algorithms and libraries can enable a real quadruped to learn to walk in only 20 minutes on several indoor and outdoor terrains.
-			<br>               
-			<a href="https://sites.google.com/berkeley.edu/walk-in-the-park">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			<a href="https://arxiv.org/abs/2208.07860">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			<a href="https://github.com/ikostrikov/walk_in_the_park">Code</a>
-			</p>
-		  </div>
-        </div>
-
-        <div class="list-item publication" data-category="publication">
-			<a href="https://sites.google.com/berkeley.edu/fine-tuning-locomotion" class="thumbnail">
-				<!-- <img src="media/finetuning.gif" alt="" width="180px"/> -->
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-					<source src="media/robopianist.mp4" type="video/mp4">
-				  </video>
-			</a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://sites.google.com/berkeley.edu/fine-tuning-locomotion">Legged Robots that Keep on Learning: Fine-Tuning Locomotion Policies in the Real World</a>
-			  </h3>
-			  <p>
-			  <font color="BE3455"><b>Laura Smith</b></font>,
-			  <!-- J. Chase Kew,
-			  <a href="https://xbpeng.github.io/">Xue Bin Peng</a>,
-			  <a href="https://www.cc.gatech.edu/~sha9/">Sehoon Ha</a>,
-			  <a href="https://www.jie-tan.net/">Jie Tan</a>,
-			  <a href="http://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> -->
-			  <br>
-			  <i>ICRA 2022.</i>
-			  <br>
-			  Legged robots are physically capable of traversing a wide range of challenging environments, but designing controllers that can handle this diversity is difficult. What if instead of training controllers that are robust enough to handle any eventuality, we enable the robot to continually learn in any setting it finds itself in?
-			  <br>               
-			  <a href="https://sites.google.com/berkeley.edu/fine-tuning-locomotion">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://arxiv.org/abs/2110.05457">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://github.com/lauramsmith/fine-tuning-locomotion">Code</a>
-			  </p>
-			</div>
-		  </div>
-  
-		  <div class="list-item publication" data-category="publication">
-			<a href="https://sites.google.com/view/smac-rl/" class="thumbnail">
-				<!-- <img src="media/smac.gif" alt="" width="180px"/> -->
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-					<source src="media/robopianist.mp4" type="video/mp4">
-				  </video>
-			</a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://sites.google.com/view/smac-rl/"></a>Offline Meta-Reinforcement Learning with Online Self-Supervision
-			  </h3>
-			  <p>
-			  <!-- <a href="https://vitchyr.github.io/">Vitchyr H. Pong</a>,
-			  <a href="https://ashvin.me/">Ashvin Nair</a>, -->
-			  <font color="BE3455"><b>Laura Smith</b></font>,
-			  <!-- Catherine Huang,
-			  <a href="http://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> -->
-			  <br>
-			  <i>ICML 2022.</i>
-			  <br>
-			  Meta-RL can meta-train policies that adapt to new tasks with orders of magnitude less data than standard RL, but meta-training itself is costly and time-consuming. We propose a hybrid offline meta-RL algorithm.
-			  <br>               
-			  <a href="https://sites.google.com/view/smac-rl/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://arxiv.org/abs/2107.03974">PDF</a>
-			  </p>
-			</div>
-		  </div>
-
-		  <div class="list-item publication" data-category="publication">
-			<a href="https://sites.google.com/view/smac-rl/" class="thumbnail">
-				<!-- <img src="" alt="" width="180px"/> -->
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-					<source src="media/robopianist.mp4" type="video/mp4">
-				  </video>
-			</a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://sites.google.com/view/smac-rl/">B-Pref: Benchmarking Preference-Based Reinforcement Learning</a>
-			  </h3>
-			  <p>
-			  <!-- <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>, -->
-			  <font color="BE3455"><b>Laura Smith</b></font>,
-			  <!-- <a href="https://people.eecs.berkeley.edu/~anca/">Anca Dragan</a>, -->
-			  <!-- <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> -->
-			  <br>
-			  <i>NeurIPS Datasets and Benchmarks Track 2021.</i>
-			  <br>
-			  B-Pref is a benchmark specially designed for preference-based RL. We simulate teachers with a wide array of irrationalities, and propose metrics not solely for performance but also for robustness to these potential irrationalities.
-			  <br>               
-			  <a href="https://arxiv.org/abs/2111.03026">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://github.com/rll-research/BPref">Code</a>
-			</p>
-			</div>
-		  </div>
-
-		  <div class="list-item publication" data-category="publication">
-			<a href="https://sites.google.com/view/icml21pebble" class="thumbnail">
-				<!-- <img src="media/pebble.gif" alt="" width="180px"/> -->
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-					<source src="media/robopianist.mp4" type="video/mp4">
-				  </video>
-			</a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://sites.google.com/view/icml21pebble">PEBBLE: Feedback-Efficient Interactive Reinforcement Learning via Relabeling Experience and Unsupervised Pre-Training</a>
-			  </h3>
-			  <p>
-			  <!-- <a href="https://sites.google.com/view/kiminlee">Kimin Lee*</a>, -->
-			  <font color="BE3455"><b>Laura Smith*</b></font>,
-			  <!-- <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> -->
-			  <br>
-			  <i>ICML 2021, Long Oral Presentation.</i>
-			  <br>
-			  Conveying complex objectives to RL agents can often be difficult Human-in-the-loop RL methods allow practitioners to instead interactively teach agents; however, this has been hard to scale. In this work, we present an off-policy, interactive RL algorithm that capitalizes on the strengths of both feedback and off-policy learning.
-			  <br>               
-			  <a href="https://sites.google.com/view/icml21pebble">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://arxiv.org/abs/2106.05091">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://github.com/pokaxpoka/B_Pref">Code</a>
-			</p>
-			</div>
-		  </div>
-
-		  <div class="list-item publication" data-category="publication">
-			<a href="https://sites.google.com/view/rss20avid" class="thumbnail">
-				<!-- <img src="media/intro.gif" alt="" width="180px"/> -->
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-					<source src="media/robopianist.mp4" type="video/mp4">
-				  </video>
-			</a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://sites.google.com/view/rss20avid">AVID: Learning Multi-Stage Tasks via Pixel-Level Translation of Human Videos</a>
-			  </h3>
-			  <p>
-			  <font color="BE3455"><b>Laura Smith</b></font>,
-			  <!-- Nikita Dhawan, -->
-			  <!-- <a href="https://marvinzhang.com/">Marvin Zhang</a>, -->
-			  <!-- <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>, -->
-			  <!-- <a href="http://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> -->
-			  <br>
-			  <i>RSS 2020.</i>
-			  <br>
-			  Humans can learn from watching others, imagining how they would perform the task themselves, and then practicing on their own. Can robots do the same? We adopt a similar strategy of imagination and practice in this project to solve complex, long-horizon tasks, like operating a coffee machine or getting objects from within a closed drawer.
-			  <br>               
-			  <a href="https://sites.google.com/view/icml21pebble">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://arxiv.org/abs/2106.05091">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://github.com/pokaxpoka/B_Pref">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://bair.berkeley.edu/blog/2019/12/13/humans-cyclegan/">BAIR Blog</a>
-			  </p>
-			</div>
-		  </div>
-
-		  <div class="list-item publication" data-category="publication">
-			<a href="https://sites.google.com/view/icml19solar" class="thumbnail">
-				<!-- <img src="media/solar_im160.png" alt="" width="180px"/> -->
-				<video playsinline="" muted="" autoplay="" loop="" width="180px">
-					<source src="media/robopianist.mp4" type="video/mp4">
-				  </video>
-			</a>
-			<div class="project-description">
-			  <h3>
-				<a href="https://sites.google.com/view/icml19solar">SOLAR: Deep Structured Latent Representations for Model-Based Reinforcement Learning</a>
-			  </h3>
-			  <p>
-			  <!-- <a href="https://marvinzhang.com/">Marvin Zhang*</a>,
-			  <a href="https://sharadvikram.com/">Sharad Vikram*</a>, -->
-			  <font color="BE3455"><b>Laura Smith</b></font>,
-			  <!-- <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
-			  <a href="https://people.csail.mit.edu/mattjj/">Matthew Johnson</a>,
-			  <a href="http://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> -->
-			  <br>
-			  <i>ICML 2019.</i>
-			  <br>
-			  Learning representations that are suitable for iterative model-based policy improvement, even when the underlying dynamical system has complex dynamics and image observations.           
-			  <br>
-			  <a href="https://sites.google.com/view/icml19solar">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://arxiv.org/abs/1808.09105">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://github.com/sharadmv/parasol">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-			  <a href="https://bair.berkeley.edu/blog/2019/05/20/solar/">BAIR Blog</a>
-			  </p>
-			</div>
-		  </div>
-
-
-
-
-        <!-- Services -->
-
-        <div class="list-item misc" data-category="misc">
-          <p class="date">2022</p>Co-Organizer, CoRL Workshop on <a href="https://sites.google.com/view/roboadapt/">Learning to Adapt and Improve in the Real World</a>
-        </div>
-
-        <div class="list-item misc" data-category="misc">
-			<p class="date">2022+</p>Reviewer, CoRL, RA-L, ICRA, NeurIPS, IROS, ICLR.
-		</div>
-
-		<div class="list-item misc" data-category="misc">
-			<p class="date"></p>Board Member, UC Berkeley <a href="https://inst.eecs.berkeley.edu/~wicse/">Women in EECS</a>
-		</div>
-
-        <div class="list-item misc" data-category="misc">
-          <p class="date">2020+</p>Co-Organizer, Berkeley AI Research Mentoring Program
-        </div>
-
-		<div class="list-item misc" data-category="misc">
-			<p class="date">2019</p>Guest Lecture at UC Berkeley <a href="https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/">CS287: Advanced Robotics</a> (<a href="https://www.youtube.com/watch?v=6j_pu06g3ck&list=PLkFD6_40KJIygrFKKYqm7_mt5c83sbGjB&index=18">video</a>)
-		</div>
-
-		<div class="list-item misc" data-category="misc">
-		  <p class="date">2018-2020</p>Co-Organizer, <a href="https://rll.berkeley.edu/outreach/">Robot Learning Lab Outreach</a>
-		</div>
-
-		<div class="list-item misc" data-category="misc">
-			<p class="date">2018</p>Guest Lecture at UC Berkeley CS10: The Beauty and Joy of Computing (<a href="https://www.youtube.com/watch?v=tji2Fl7OPPk/">video</a>)
-		</div>
-
-
-      </div>
-
-      <div id="footer"> Website template by <a href="https://andyzeng.github.io">Andy Zeng</a>.</div>
-
     </div>
 
-    <script>
+    <div id="filters" class="button-group">
+      <button class="button is-checked" data-filter=".highlight">Highlights</button>
+      <button class="button" data-filter=".publication">Research</button>
+      <button class="button" data-filter=".misc">Misc</button>
+    </div>
 
-      // Isotope grid.
-      var $grid = $('.grid').isotope({
-        itemSelector: '.list-item',
-        layoutMode: 'fitRows',
-        transitionDuration: 0,
-        stagger: 10,
-        initLayout: false,
-        getSortData: {
-          name: '.name',
-          symbol: '.symbol',
-          number: '.number parseInt',
-          category: '[data-category]',
-          weight: function( itemElem ) {
-            var weight = $( itemElem ).find('.weight').text();
-            return parseFloat( weight.replace( /[\(\)]/g, '') );
+    <div class="grid">
+
+      <!-- Highlights -->
+      <div class="list-item highlight description" data-category="highlight">
+        Some recent highlights from my research:
+      </div>
+
+      <!-- Preview Videos -->
+      <div class="list-item highlight previews" data-category="highlight">
+
+        <a href="https://kzakka.com/robopianist/"><video class="preview1" playsinline="" muted="" autoplay="" loop="">
+            <source src="images/robopianist-teaser.mp4" type="video/mp4">
+          </video></a>
+
+        <a href="https://github.com/deepmind/mujoco_menagerie"><video class="preview2" playsinline="" muted=""
+            autoplay="" loop="">
+            <source src="images/menagerie.mp4" type="video/mp4">
+          </video></a>
+
+      </div>
+
+      <!-- Truncated Set of Highlights (Shown by Default) -->
+      <div id="main-highlights">
+        <div class="list-item highlight" data-category="highlight">
+          <b>RoboPianist</b> makes the <a href="https://news.ycombinator.com/item?id=35376138">front page of Hacker
+            News</a>
+        </div>
+        <div class="list-item highlight" data-category="highlight">
+          <b>Google AI</b> blog post <a href="https://ai.googleblog.com/2022/02/robot-see-robot-do.html">"Robot See,
+            Robot Do"</a>
+        </div>
+        <div class="list-item highlight" data-category="highlight">
+          <b>Google AI</b> blog post <a
+            href="https://ai.googleblog.com/2019/10/learning-to-assemble-and-to-generalize.html">"Learning to Assemble
+            and to Generalize from Disassembly"</a>
+        </div>
+      </div>
+
+      <!-- All Archived Highlights (Click to Show) -->
+      <div id="more-highlights" style="display: None">
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2023</p><a href="https://github.com/google-research/robopianist">RoboPianist</a> is released
+        </div>
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2022</p><a href="https://github.com/deepmind/mujoco_menagerie">MuJoCo Menagerie</a> is
+          open-sourced
+        </div>
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date"></p>Google AI blog post <a
+            href="https://ai.googleblog.com/2022/02/robot-see-robot-do.html">"Robot See, Robot Do"</a>
+        </div>
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2021</p>Conference on Robot Learning (CoRL) <a href="https://x-irl.github.io/">Best Paper
+            Award Finalist</a> award
+        </div>
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date"></p>Honored to be a recipient of the <a
+            href="https://ctl.stanford.edu/centennial-teaching-assistant-awards">Centennial Teaching Assistant</a> award
+        </div>
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2020</p>IEEE International Conference on Robotics and Automation (ICRA) <a
+            href="https://form2fit.github.io/">Best Paper in Automation Award Finalist</a>
+        </div>
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date"></p>Google AI blog post <a
+            href="https://ai.googleblog.com/2019/10/learning-to-assemble-and-to-generalize.html">"Learning to Assemble
+            and to Generalize from Disassembly"</a>
+        </div>
+      </div>
+
+      <!-- Toggle highlights button. -->
+      <div class="list-item highlight toggle-button" data-category="highlight">
+        <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
+      </div>
+
+      <!-- Publications -->
+      <div class="list-item publication" data-category="publication">
+        <a href="https://kzakka.com/robopianist/" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/robopianist.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://kzakka.com/robopianist/">RoboPianist: A Benchmark for High-Dimensional Robot Control</a>
+          </h3>
+          <p>
+            Kevin Zakka, Laura Smith, Nimrod Gileadi, Taylor Howell, Xue Bin Peng, Sumeet Singh, Yuval Tassa, Pete
+            Florence, Andy Zeng, Pieter Abbeel<br>
+            <i>In submission, 2023</i><br>
+            <a href="https://kzakka.com/robopianist/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://kzakka.com/robopianist/robopianist.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://github.com/google-research/robopianist">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a
+              href="https://colab.research.google.com/github/google-research/robopianist/blob/main/tutorial.ipynb">Colab</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://kevinzakka.github.io/robopianist-demo/">Demo</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://x-irl.github.io/" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/xirl.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://x-irl.github.io/">XIRL: Cross-Embodiment Inverse Reinforcement Learning</a></h3>
+          <p>
+            Kevin Zakka, Andy Zeng, Pete Florence, Jonathan Tompson, Jeannette Bohg, Debidatta Dwibedi<br>
+            <i>Conference on Robot Learning (CoRL) 2021</i><br>
+            <font color="49bf9"><i>&#9733; Best Paper Award Finalist, CoRL &#9733;</i></font><br>
+            <a href="https://x-irl.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://arxiv.org/pdf/2106.03911.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a
+              href="https://github.com/google-research/google-research/tree/master/xirl">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://github.com/kevinzakka/x-magical">Benchmark</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://ai.googleblog.com/2022/02/robot-see-robot-do.html">Google AI Blog</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://form2fit.github.io/" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/form2fit.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://form2fit.github.io/">Form2Fit: Learning Shape Priors for Generalizable Assembly from
+              Disassembly</a></h3>
+          <p>
+            Kevin Zakka, Andy Zeng, Johnny Lee, Shuran Song<br>
+            <i>IEEE International Conference on Robotics and Automation (ICRA) 2020</i><br>
+            <font color="49bf9"><i>&#9733; Best Paper in Automation Award Finalist, ICRA &#9733;</i></font><br>
+            <a href="https://form2fit.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://arxiv.org/pdf/1910.13675.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://github.com/kevinzakka/form2fit">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://ai.googleblog.com/2019/10/learning-to-assemble-and-to-generalize.html">Google AI
+              Blog</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a
+              href="https://venturebeat.com/2019/10/31/watch-googles-ai-teach-a-picker-robot-to-assemble-objects/">VentureBeat</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://www.youtube.com/watch?v=O8l4Kn-j-5M">2 Minute Papers</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2021</p>Head TA for <a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks
+          for Visual Recognition</a>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        Website template by <a href="https://andyzeng.github.io/">Andy Zeng</a>.
+      </div>
+
+      <script>
+
+        // Isotope grid.
+        var $grid = $('.grid').isotope({
+          itemSelector: '.list-item',
+          layoutMode: 'fitRows',
+          transitionDuration: 0,
+          stagger: 10,
+          initLayout: false,
+          getSortData: {
+            name: '.name',
+            symbol: '.symbol',
+            number: '.number parseInt',
+            category: '[data-category]',
+            weight: function (itemElem) {
+              var weight = $(itemElem).find('.weight').text();
+              return parseFloat(weight.replace(/[\(\)]/g, ''));
+            }
           }
-        }
-      });
-
-      // Bind filter button click.
-      $('#filters').on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
-        localStorage.setItem('filterValue', filterValue);
-        $grid.isotope({ filter: filterValue });
-      });
-
-      // Change is-checked class on buttons.
-      $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
         });
-      });
 
-      function update_isotope() {
-        // Retrieve cached button click.
-        var defaultFilterValue = localStorage.getItem('filterValue');
-        if (defaultFilterValue == null) {
-          defaultFilterValue = ".highlight"
-        }
-        $grid.isotope({ filter: defaultFilterValue });
-        var buttons = document.getElementsByClassName("button");
-        for (var currButton of buttons) {
-          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
-            currButton.classList.add('is-checked');
-          } else {
-            currButton.classList.remove('is-checked');
+        // Bind filter button click.
+        $('#filters').on('click', 'button', function () {
+          var filterValue = $(this).attr('data-filter');
+          localStorage.setItem('filterValue', filterValue);
+          $grid.isotope({ filter: filterValue });
+        });
+
+        // Change is-checked class on buttons.
+        $('.button-group').each(function (i, buttonGroup) {
+          var $buttonGroup = $(buttonGroup);
+          $buttonGroup.on('click', 'button', function () {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+          });
+        });
+
+        function update_isotope() {
+          // Retrieve cached button click.
+          var defaultFilterValue = localStorage.getItem('filterValue');
+          if (defaultFilterValue == null) {
+            defaultFilterValue = ".highlight"
+          }
+          $grid.isotope({ filter: defaultFilterValue });
+          var buttons = document.getElementsByClassName("button");
+          for (var currButton of buttons) {
+            if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+              currButton.classList.add('is-checked');
+            } else {
+              currButton.classList.remove('is-checked');
+            }
           }
         }
-      }
 
-      function toggle_bio() {
-        var x = document.getElementById("more-bio");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
+        function toggle_bio() {
+          var x = document.getElementById("more-bio");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
         }
-      }
 
-      function toggle_highlights() {
-        var x = document.getElementById("main-highlights");
-        var y = document.getElementById("more-highlights");
-        var b = document.getElementById("toggle_highlights_button")
-        if (y.style.display === "none") {
-          x.style.display = "none";
-          y.style.display = "block";
-          b.innerHTML = "Show less"
-          update_isotope();
-        } else {
-          x.style.display = "block";
-          y.style.display = "none";
-          b.innerHTML = "Show more"
-          update_isotope();
+        function toggle_highlights() {
+          var x = document.getElementById("main-highlights");
+          var y = document.getElementById("more-highlights");
+          var b = document.getElementById("toggle_highlights_button")
+          if (y.style.display === "none") {
+            x.style.display = "none";
+            y.style.display = "block";
+            b.innerHTML = "Show less"
+            update_isotope();
+          } else {
+            x.style.display = "block";
+            y.style.display = "none";
+            b.innerHTML = "Show more"
+            update_isotope();
+          }
         }
-      }
 
-      update_isotope();
+        update_isotope();
 
-    </script>
-  </body>
+      </script>
+</body>
+
 </html>
